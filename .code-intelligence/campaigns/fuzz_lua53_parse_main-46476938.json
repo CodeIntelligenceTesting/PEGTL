@@ -1,0 +1,23 @@
+{
+  "name": "fuzz_lua53_parse_main-46476938",
+  "displayName": "fuzz_lua53_parse_main",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "fuzz_lua53_parse_main-da258ab5"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}

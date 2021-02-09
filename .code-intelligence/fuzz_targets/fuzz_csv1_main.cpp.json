@@ -1,0 +1,19 @@
+{
+  "name": "fuzz_csv1_main-520580fb",
+  "displayName": "fuzz_csv1_main",
+  "buildFlags": [
+    "-I.",
+    "-std=c++17",
+    "-Isrc/example/pegtl",
+    "-Iinclude",
+    "-lFuzzCIpegtl-example-csv1",
+    "-Lbuild/src/example/pegtl",
+    "-L.",
+    "-v"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/fuzz_csv1_main.cpp"
+    }
+  }
+}
