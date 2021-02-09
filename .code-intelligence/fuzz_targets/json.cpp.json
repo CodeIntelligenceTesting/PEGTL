@@ -1,0 +1,13 @@
+{
+  "name": "json-c87f3eaf",
+  "displayName": "json",
+  "buildFlags": [
+    "-Iinclude",
+    "-std=c++17"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/json.cpp"
+    }
+  }
+}

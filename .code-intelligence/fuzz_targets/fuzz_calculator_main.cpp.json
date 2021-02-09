@@ -1,0 +1,18 @@
+{
+  "name": "fuzz_calculator_main-35b89295",
+  "displayName": "fuzz_calculator_main",
+  "buildFlags": [
+    "-std=c++17",
+    "-Isrc/example/pegtl",
+    "-Iinclude",
+    "-lFuzzCIpegtl-example-calculator",
+    "-Lbuild/src/example/pegtl",
+    "-v",
+    "-v"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/fuzz_calculator_main.cpp"
+    }
+  }
+}

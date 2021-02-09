@@ -1,0 +1,17 @@
+{
+  "name": "fuzz_json_parse_main-c34162fd",
+  "displayName": "fuzz_json_parse_main",
+  "buildFlags": [
+    "-std=c++17",
+    "-Isrc/example/pegtl",
+    "-Iinclude",
+    "-lFuzzCIpegtl-example-json_parse",
+    "-Lbuild/src/example/pegtl",
+    "-v"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/fuzz_json_parse_main.cpp"
+    }
+  }
+}

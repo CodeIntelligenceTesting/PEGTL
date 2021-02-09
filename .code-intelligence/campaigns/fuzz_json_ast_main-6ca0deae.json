@@ -1,0 +1,23 @@
+{
+  "name": "fuzz_json_ast_main-6ca0deae",
+  "displayName": "fuzz_json_ast_main",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "fuzz_json_ast_main-4c8ea035"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}
