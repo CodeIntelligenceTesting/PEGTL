@@ -1,0 +1,23 @@
+{
+  "name": "fuzz_calculator_main-4bc35581",
+  "displayName": "fuzz_calculator_main",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "fuzz_calculator_main-35b89295"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}

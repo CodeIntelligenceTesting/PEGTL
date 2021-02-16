@@ -1,0 +1,17 @@
+{
+  "name": "fuzz_lua53_parse_main-da258ab5",
+  "displayName": "fuzz_lua53_parse_main",
+  "buildFlags": [
+    "-I.",
+    "-std=c++17",
+    "-Isrc/example/pegtl",
+    "-Iinclude",
+    "-lFuzzCIpegtl-example-lua53_parse",
+    "-Lbuild/src/example/pegtl"
+  ],
+  "cApi": {
+    "api": {
+      "relativePath": ".code-intelligence/fuzz_targets/fuzz_lua53_parse_main.cpp"
+    }
+  }
+}

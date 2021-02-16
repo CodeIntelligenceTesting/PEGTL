@@ -1,0 +1,16 @@
+{
+  "name": "projects/pegtl-5495c4b8",
+  "displayName": "PEGTL",
+  "buildScriptContent": "mkdir build\ncd build\ncmake ..\nmake -j$(nproc)",
+  "details": {
+    "buildSystem": "CMAKE"
+  },
+  "projectEnvironment": {
+    "dockerBuild": {
+      "name": "gcr.io/code-intelligence/pegtl-builder-v2"
+    },
+    "dockerRun": {
+      "name": "gcr.io/code-intelligence/pegtl-builder-v2"
+    }
+  }
+}

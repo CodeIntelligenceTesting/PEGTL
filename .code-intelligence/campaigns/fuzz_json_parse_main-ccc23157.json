@@ -1,0 +1,24 @@
+{
+  "name": "fuzz_json_parse_main-ccc23157",
+  "displayName": "fuzz_json_parse_main",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "fuzz_json_parse_main-c34162fd"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ],
+  "skipInitialCorpus": true
+}

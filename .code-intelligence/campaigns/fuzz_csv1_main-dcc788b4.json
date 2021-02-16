@@ -1,0 +1,23 @@
+{
+  "name": "fuzz_csv1_main-dcc788b4",
+  "displayName": "fuzz_csv1_main",
+  "maxRunTime": "1800s",
+  "fuzzTargets": [
+    "fuzz_csv1_main-520580fb"
+  ],
+  "fuzzerRunConfigurations": [
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1
+    },
+    {
+      "engine": "LIBFUZZER",
+      "sanitizer": "ADDRESS",
+      "numberOfJobs": 1,
+      "engineArguments": [
+        "-use_value_profile=1"
+      ]
+    }
+  ]
+}
