@@ -13,7 +13,7 @@ env:
 
 jobs:
   fuzz_fuzz_calculator_main:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: start-fuzzing
         name: Build and Instrument
@@ -54,7 +54,7 @@ jobs:
           dashboard_address: ${{ env.DASHBOARD_ADDRESS }}
           
   fuzz_fuzz_csv1_main:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: start-fuzzing
         name: Build and Instrument
@@ -95,7 +95,7 @@ jobs:
           dashboard_address: ${{ env.DASHBOARD_ADDRESS }}
           
   fuzz_fuzz_json:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: start-fuzzing
         name: Build and Instrument
@@ -136,7 +136,7 @@ jobs:
           dashboard_address: ${{ env.DASHBOARD_ADDRESS }}
           
   fuzz_fuzz_lua53_parse_main:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: start-fuzzing
         name: Build and Instrument
